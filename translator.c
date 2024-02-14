@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "alphabet.h"
 
 int main()
 {
     char userResponse[64];
     char singleCharacter;
     int i;
+    const char *nato[] = {
+        "Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot",
+        "Golf", "Hotel", "India", "Juliett", "Kilo", "Lima",
+        "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo",
+        "Sierra", "Tango", "Uniform", "Victor", "Whiskey",
+        "Xray", "Yankee", "Zulu"};
 
     printf("Enter a word or phrase: ");
     fgets(userResponse, 64, stdin);
@@ -14,7 +19,7 @@ int main()
     i = 0;
     while (userResponse[i])
     {
-        singleCharacter = toUpper(userResponse[i]);
+        singleCharacter = toupper(userResponse[i]);
         if (isalpha(singleCharacter))
         {
             printf("%s ", nato[singleCharacter - 'A']);
