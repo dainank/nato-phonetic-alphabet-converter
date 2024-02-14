@@ -1,5 +1,5 @@
-# NATO Phonetic Alphabet Library
-Simple library of functions for parsing alphabet into NATO phonetic alphabet and vice versa.
+# NATO Phonetic Alphabet Converter
+Simple files for parsing alphabet into NATO phonetic alphabet and vice versa via files or command-line.
 
 # The `nato[singleCharacter - 'A']` Code
 
