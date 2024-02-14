@@ -1,7 +1,9 @@
 # NATO Phonetic Alphabet Library
 Simple library of functions for parsing alphabet into NATO phonetic alphabet and vice versa.
 
+# The `nato[singleCharacter - 'A']` Code
 
+It accesses an element from the `nato` array. The array index is calculated by subtracting the character 'A' (65 in ASCII) from the `singleCharacter`. This effectively converts the uppercase character (A-Z) to its corresponding index in the `nato` array (0-25).
 
 # Reference
 
